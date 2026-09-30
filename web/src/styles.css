@@ -690,3 +690,43 @@ button {
     padding-top: 75px;
   }
 }
+.product-row {
+  background: none;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  color: inherit;
+  text-align: left;
+  width: 100%;
+}
+.product-row:hover { background: #f7f8f8; }
+.modal-backdrop {
+  align-items: center;
+  background: #0b0d1299;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 30;
+}
+.modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 24px 70px #0005;
+  max-height: 90vh;
+  max-width: 520px;
+  overflow: auto;
+  padding: 28px;
+  position: relative;
+  width: 100%;
+}
+.modal form > p { color: #71801e; font-family: "DM Mono"; font-size: 8px; letter-spacing: .13em; }
+.modal h2 { font-size: 25px; letter-spacing: -.04em; margin: 5px 0 22px; }
+.modal label { display: grid; font-size: 9px; font-weight: 700; gap: 7px; margin: 13px 0; }
+.modal input,.modal select { border: 1px solid #dfe1e5; border-radius: 7px; font: inherit; outline: none; padding: 11px; }
+.modal-close { background: none; border: 0; color: #7b8089; position: absolute; right: 16px; top: 16px; }
+.modal-close svg { width: 18px; }
+.modal-primary { background: #171a20; border: 0; border-radius: 7px; color: white; font-size: 10px; font-weight: 700; margin-top: 10px; padding: 12px; width: 100%; }
+.form-grid { display: grid; gap: 0 12px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 520px) { .form-grid { grid-template-columns: 1fr; } }
